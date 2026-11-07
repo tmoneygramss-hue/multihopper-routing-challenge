@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Superteam Route Challenge Submission</title>
+    <!-- Load the Solana routing engine widget -->
+    <script src="https://jup.ag" data-preload></script>
+</head>
+<body style="background-color: #0b0e14; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+
+    <h1>🚀 Fast Route Swap Portal</h1>
+    <p>Connect your Solana wallet to instantly swap and route tokens.</p>
+
+    <!-- The Box Where the Routing Terminal Appears -->
+    <div id="integrated-terminal" style="width: 420px; height: 560px; border-radius: 16px; overflow: hidden; box-shadow: 0px 10px 30px rgba(0,0,0,0.5);"></div>
+
+    <script>
+        // Initialize the multi-hop routing widget
+        window.Jupiter.init({
+            displayMode: "integrated",
+            integratedTargetId: "integrated-terminal",
+            endpoint: "https://solana.com",
+        });
+    </script>
+</body>
+</html>
 
